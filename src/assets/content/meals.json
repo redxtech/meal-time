@@ -71,6 +71,45 @@
           "ingredient": "Onions"
         }
       ]
+    },
+    {
+      "title": "Hot Dogs / Smokies",
+      "description": "Some tasty hot dogs or smokies.",
+      "ingredients": [
+        {
+          "ingredient": "Hot dogs (or smokies)"
+        },
+        {
+          "ingredient": "Hot dog buns"
+        },
+        {
+          "ingredient": "Ketchup"
+        },
+        {
+          "ingredient": "Mustard"
+        },
+        {
+          "ingredient": "Cheese"
+        },
+        {
+          "ingredient": "Chips"
+        }
+      ]
+    },
+    {
+      "title": "Scrambled Eggs",
+      "description": "Some very nice scrambled eggs.",
+      "ingredients": [
+        {
+          "ingredient": "Eggs"
+        },
+        {
+          "ingredient": "Milk"
+        },
+        {
+          "ingredient": "Sharp cheddar"
+        }
+      ]
     }
   ]
 }
