@@ -1,0 +1,34 @@
+{
+  "meals": [
+    {
+      "title": "Pierogies",
+      "description": "Tasty pierogies",
+      "ingredients": [
+        {
+          "ingredient": "Pierogies"
+        },
+        {
+          "ingredient": "Sour cream"
+        },
+        {
+          "ingredient": "Cheese"
+        },
+        {
+          "ingredient": "Butter"
+        },
+        {
+          "ingredient": "Salt"
+        },
+        {
+          "ingredient": "Bacon bits"
+        },
+        {
+          "ingredient": "Onions"
+        },
+        {
+          "ingredient": "Chives"
+        }
+      ]
+    }
+  ]
+}
