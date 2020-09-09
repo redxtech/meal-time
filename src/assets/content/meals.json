@@ -29,6 +29,48 @@
           "ingredient": "Chives"
         }
       ]
+    },
+    {
+      "title": "Burger",
+      "description": "A tasty burger.",
+      "ingredients": [
+        {
+          "ingredient": "Burger patty"
+        },
+        {
+          "ingredient": "Burger bun"
+        },
+        {
+          "ingredient": "Cheese slice"
+        },
+        {
+          "ingredient": "Ketchup"
+        },
+        {
+          "ingredient": "Mustard"
+        },
+        {
+          "ingredient": "Frank's"
+        },
+        {
+          "ingredient": "Seasoning"
+        },
+        {
+          "ingredient": "Bacon"
+        },
+        {
+          "ingredient": "Pickles"
+        },
+        {
+          "ingredient": "Tomato"
+        },
+        {
+          "ingredient": "Letuce"
+        },
+        {
+          "ingredient": "Onions"
+        }
+      ]
     }
   ]
 }
