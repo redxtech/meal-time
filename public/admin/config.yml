@@ -1,0 +1,32 @@
+backend:
+  name: github
+  repo: redxtech/meal-time
+  branch: master
+
+media_folder: src/assets/images
+
+collections:
+  - label: Meals
+    name: meals
+    files:
+      - label: Meals
+        name: meals
+        file: src/assets/content/meals.json
+        fields:
+          - label: Meals
+            name: meals
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Description
+                name: description
+                widget: string
+              - label: Ingredients
+                name: ingredients
+                widget: list
+                fields:
+                  - { label: Ingredient, name: ingredient, widget: string }
+    editor:
+      preview: false
