@@ -28,7 +28,8 @@
         {
           "ingredient": "Chives"
         }
-      ]
+      ],
+      "type": "Main"
     },
     {
       "title": "Burger",
@@ -70,7 +71,8 @@
         {
           "ingredient": "Onions"
         }
-      ]
+      ],
+      "type": "Main"
     },
     {
       "title": "Hot Dogs / Smokies",
@@ -94,7 +96,8 @@
         {
           "ingredient": "Chips"
         }
-      ]
+      ],
+      "type": "Main"
     },
     {
       "title": "Scrambled Eggs",
@@ -108,6 +111,33 @@
         },
         {
           "ingredient": "Sharp cheddar"
+        }
+      ],
+      "type": "Side"
+    },
+    {
+      "type": "Main",
+      "title": "Sausages",
+      "description": "Some tasty sausages.",
+      "ingredients": [
+        {
+          "ingredient": "Sausages"
+        },
+        {
+          "ingredient": "Mustard (dijon)"
+        }
+      ]
+    },
+    {
+      "type": "Side",
+      "title": "Caesar Salad",
+      "description": "A very good caesar salad",
+      "ingredients": [
+        {
+          "ingredient": "Romain lettuce"
+        },
+        {
+          "ingredient": "Caesar salad dressing"
         }
       ]
     }
