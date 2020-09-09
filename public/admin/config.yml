@@ -28,5 +28,10 @@ collections:
                 widget: list
                 fields:
                   - { label: Ingredient, name: ingredient, widget: string }
+              - label: Type
+                name: type
+                widget: select
+                options: [ Main, Side ]
+                default: Main
     editor:
       preview: false
