@@ -1,7 +1,7 @@
 <template>
 	<h1>Meals</h1>
 	<div class="meals">
-		<div v-for="meal in meals">
+		<div v-for="meal in meals" :key="meal.title">
 			<h2 v-text="meal.title" />
 			<h4 v-text="meal.description" />
 			<button @click="selected.push(meal)">Add</button>
@@ -9,7 +9,7 @@
 	</div>
 	<h1>Ingredients</h1>
 	<div class="ingredients">
-		<div v-for="ingredient in ingredients">
+		<div v-for="ingredient in ingredients" :key="ingredient">
 			<p v-text="ingredient" />
 		</div>
 	</div>
