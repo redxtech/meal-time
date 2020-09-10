@@ -1,8 +1,9 @@
 module.exports = {
-	useTabs: true,
-	semi: false,
-	singleQuote: true,
-	trailingComma: 'none',
-	arrowParens: 'avoid',
-	proseWrap: 'always'
+  useTabs: true,
+  arrowParens: 'avoid',
+  proseWrap: 'always',
+  semi: false,
+  singleQuote: true,
+  trailingComma: 'none',
+  vueIndentScriptAndStyle: true
 }
