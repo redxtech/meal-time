@@ -16,35 +16,35 @@
 </template>
 
 <script>
-import { meals } from './assets/content/meals.json'
+	import { meals } from './assets/content/meals.json'
 
-export default {
-	name: 'App',
-	data() {
-		return {
-			meals: [...meals],
-			selected: []
-		}
-	},
-	computed: {
-		ingredients() {
-			// noinspection JSUnresolvedVariable
-			return [
-				...new Set(
-					this.selected.map(m => m.ingredients.map(i => i.ingredient)).flat()
-				)
-			]
+	export default {
+		name: 'App',
+		data() {
+			return {
+				meals: [...meals],
+				selected: []
+			}
+		},
+		computed: {
+			ingredients() {
+				// noinspection JSUnresolvedVariable
+				return [
+					...new Set(
+						this.selected.map(m => m.ingredients.map(i => i.ingredient)).flat()
+					)
+				]
+			}
 		}
 	}
-}
 </script>
 
 <style>
-.meals div {
-	display: inline-block;
-	border: 1px solid black;
-	border-radius: 0.5rem;
-	padding: 1rem;
-	margin: 1rem;
-}
+	.meals div {
+		display: inline-block;
+		border: 1px solid black;
+		border-radius: 0.5rem;
+		padding: 1rem;
+		margin: 1rem;
+	}
 </style>
