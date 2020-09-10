@@ -1,145 +1,145 @@
 {
-  "meals": [
-    {
-      "title": "Pierogies",
-      "description": "Tasty pierogies",
-      "ingredients": [
-        {
-          "ingredient": "Pierogies"
-        },
-        {
-          "ingredient": "Sour cream"
-        },
-        {
-          "ingredient": "Cheese"
-        },
-        {
-          "ingredient": "Butter"
-        },
-        {
-          "ingredient": "Salt"
-        },
-        {
-          "ingredient": "Bacon bits"
-        },
-        {
-          "ingredient": "Onions"
-        },
-        {
-          "ingredient": "Chives"
-        }
-      ],
-      "type": "Main"
-    },
-    {
-      "title": "Burger",
-      "description": "A tasty burger.",
-      "ingredients": [
-        {
-          "ingredient": "Burger patty"
-        },
-        {
-          "ingredient": "Burger bun"
-        },
-        {
-          "ingredient": "Cheese slice"
-        },
-        {
-          "ingredient": "Ketchup"
-        },
-        {
-          "ingredient": "Mustard"
-        },
-        {
-          "ingredient": "Frank's"
-        },
-        {
-          "ingredient": "Seasoning"
-        },
-        {
-          "ingredient": "Bacon"
-        },
-        {
-          "ingredient": "Pickles"
-        },
-        {
-          "ingredient": "Tomato"
-        },
-        {
-          "ingredient": "Letuce"
-        },
-        {
-          "ingredient": "Onions"
-        }
-      ],
-      "type": "Main"
-    },
-    {
-      "title": "Hot Dogs / Smokies",
-      "description": "Some tasty hot dogs or smokies.",
-      "ingredients": [
-        {
-          "ingredient": "Hot dogs (or smokies)"
-        },
-        {
-          "ingredient": "Hot dog buns"
-        },
-        {
-          "ingredient": "Ketchup"
-        },
-        {
-          "ingredient": "Mustard"
-        },
-        {
-          "ingredient": "Cheese"
-        },
-        {
-          "ingredient": "Chips"
-        }
-      ],
-      "type": "Main"
-    },
-    {
-      "title": "Scrambled Eggs",
-      "description": "Some very nice scrambled eggs.",
-      "ingredients": [
-        {
-          "ingredient": "Eggs"
-        },
-        {
-          "ingredient": "Milk"
-        },
-        {
-          "ingredient": "Sharp cheddar"
-        }
-      ],
-      "type": "Side"
-    },
-    {
-      "type": "Main",
-      "title": "Sausages",
-      "description": "Some tasty sausages.",
-      "ingredients": [
-        {
-          "ingredient": "Sausages"
-        },
-        {
-          "ingredient": "Mustard (dijon)"
-        }
-      ]
-    },
-    {
-      "type": "Side",
-      "title": "Caesar Salad",
-      "description": "A very good caesar salad",
-      "ingredients": [
-        {
-          "ingredient": "Romain lettuce"
-        },
-        {
-          "ingredient": "Caesar salad dressing"
-        }
-      ]
-    }
-  ]
+	"meals": [
+		{
+			"title": "Pierogies",
+			"description": "Tasty pierogies",
+			"ingredients": [
+				{
+					"ingredient": "Pierogies"
+				},
+				{
+					"ingredient": "Sour cream"
+				},
+				{
+					"ingredient": "Cheese"
+				},
+				{
+					"ingredient": "Butter"
+				},
+				{
+					"ingredient": "Salt"
+				},
+				{
+					"ingredient": "Bacon bits"
+				},
+				{
+					"ingredient": "Onions"
+				},
+				{
+					"ingredient": "Chives"
+				}
+			],
+			"type": "Main"
+		},
+		{
+			"title": "Burger",
+			"description": "A tasty burger.",
+			"ingredients": [
+				{
+					"ingredient": "Burger patty"
+				},
+				{
+					"ingredient": "Burger bun"
+				},
+				{
+					"ingredient": "Cheese slice"
+				},
+				{
+					"ingredient": "Ketchup"
+				},
+				{
+					"ingredient": "Mustard"
+				},
+				{
+					"ingredient": "Frank's"
+				},
+				{
+					"ingredient": "Seasoning"
+				},
+				{
+					"ingredient": "Bacon"
+				},
+				{
+					"ingredient": "Pickles"
+				},
+				{
+					"ingredient": "Tomato"
+				},
+				{
+					"ingredient": "Letuce"
+				},
+				{
+					"ingredient": "Onions"
+				}
+			],
+			"type": "Main"
+		},
+		{
+			"title": "Hot Dogs / Smokies",
+			"description": "Some tasty hot dogs or smokies.",
+			"ingredients": [
+				{
+					"ingredient": "Hot dogs (or smokies)"
+				},
+				{
+					"ingredient": "Hot dog buns"
+				},
+				{
+					"ingredient": "Ketchup"
+				},
+				{
+					"ingredient": "Mustard"
+				},
+				{
+					"ingredient": "Cheese"
+				},
+				{
+					"ingredient": "Chips"
+				}
+			],
+			"type": "Main"
+		},
+		{
+			"title": "Scrambled Eggs",
+			"description": "Some very nice scrambled eggs.",
+			"ingredients": [
+				{
+					"ingredient": "Eggs"
+				},
+				{
+					"ingredient": "Milk"
+				},
+				{
+					"ingredient": "Sharp cheddar"
+				}
+			],
+			"type": "Side"
+		},
+		{
+			"type": "Main",
+			"title": "Sausages",
+			"description": "Some tasty sausages.",
+			"ingredients": [
+				{
+					"ingredient": "Sausages"
+				},
+				{
+					"ingredient": "Mustard (dijon)"
+				}
+			]
+		},
+		{
+			"type": "Side",
+			"title": "Caesar Salad",
+			"description": "A very good caesar salad",
+			"ingredients": [
+				{
+					"ingredient": "Romain lettuce"
+				},
+				{
+					"ingredient": "Caesar salad dressing"
+				}
+			]
+		}
+	]
 }
