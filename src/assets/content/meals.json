@@ -6,28 +6,36 @@
 			"directions": "Cook the pierogies in a pot.",
 			"ingredients": [
 				{
-					"ingredient": "Pierogies"
+					"ingredient": "Pierogies",
+          "count": 8
 				},
 				{
-					"ingredient": "Sour cream"
+					"ingredient": "Sour cream",
+          "count": 0
 				},
 				{
-					"ingredient": "Cheese"
+					"ingredient": "Cheese",
+          "count": 0
 				},
 				{
-					"ingredient": "Butter"
+					"ingredient": "Butter",
+          "count": 0
 				},
 				{
-					"ingredient": "Salt"
+					"ingredient": "Salt",
+          "count": 0
 				},
 				{
-					"ingredient": "Bacon bits"
+					"ingredient": "Bacon bits",
+          "count": 0
 				},
 				{
-					"ingredient": "Onions"
+					"ingredient": "Onions",
+          "count": 0
 				},
 				{
-					"ingredient": "Chives"
+					"ingredient": "Chives",
+          "count": 0
 				}
 			],
 			"type": "Main"
@@ -38,40 +46,52 @@
       "directions": "Grill the burger on the barbecue.",
 			"ingredients": [
 				{
-					"ingredient": "Burger patty"
+					"ingredient": "Burger patty",
+          "count": 1
 				},
 				{
-					"ingredient": "Burger bun"
+					"ingredient": "Burger bun",
+          "count": 1
 				},
 				{
-					"ingredient": "Cheese slice"
+					"ingredient": "Cheese slice",
+          "count": 1
 				},
 				{
-					"ingredient": "Ketchup"
+					"ingredient": "Ketchup",
+          "count": 0
 				},
 				{
-					"ingredient": "Mustard"
+					"ingredient": "Mustard",
+          "count": 0
 				},
 				{
-					"ingredient": "Frank's"
+					"ingredient": "Frank's",
+          "count": 0
 				},
 				{
-					"ingredient": "Seasoning"
+					"ingredient": "Seasoning",
+          "count": 0
 				},
 				{
-					"ingredient": "Bacon"
+					"ingredient": "Bacon",
+          "count": 0
 				},
 				{
-					"ingredient": "Pickles"
+					"ingredient": "Pickles",
+          "count": 0
 				},
 				{
-					"ingredient": "Tomato"
+					"ingredient": "Tomato",
+          "count": 0
 				},
 				{
-					"ingredient": "Letuce"
+					"ingredient": "Lettuce",
+          "count": 0
 				},
 				{
-					"ingredient": "Onions"
+					"ingredient": "Onions",
+          "count": 0
 				}
 			],
 			"type": "Main"
@@ -82,22 +102,28 @@
       "directions": "Grill the hot dogs/smokies on the barbecue.",
 			"ingredients": [
 				{
-					"ingredient": "Hot dogs (or smokies)"
+					"ingredient": "Hot dogs (or smokies)",
+          "count": 2
 				},
 				{
-					"ingredient": "Hot dog buns"
+					"ingredient": "Hot dog buns",
+          "count": 2
 				},
 				{
-					"ingredient": "Ketchup"
+					"ingredient": "Ketchup",
+          "count": 0
 				},
 				{
-					"ingredient": "Mustard"
+					"ingredient": "Mustard",
+          "count": 0
 				},
 				{
-					"ingredient": "Cheese"
+					"ingredient": "Cheese",
+          "count": 0
 				},
 				{
-					"ingredient": "Chips"
+					"ingredient": "Chips",
+          "count": 0
 				}
 			],
 			"type": "Main"
@@ -108,13 +134,16 @@
       "directions": "Scramble the eggs in a pan.",
 			"ingredients": [
 				{
-					"ingredient": "Eggs"
+					"ingredient": "Eggs",
+          "count": 4
 				},
 				{
-					"ingredient": "Milk"
+					"ingredient": "Milk",
+          "count": 0
 				},
 				{
-					"ingredient": "Sharp cheddar"
+					"ingredient": "Sharp cheddar",
+          "count": 0
 				}
 			],
 			"type": "Side"
@@ -126,10 +155,12 @@
       "directions": "Grill the sausages on the barbecue.",
 			"ingredients": [
 				{
-					"ingredient": "Sausages"
+					"ingredient": "Sausages",
+          "count": 2
 				},
 				{
-					"ingredient": "Mustard (dijon)"
+					"ingredient": "Mustard (dijon)",
+          "count": 0
 				}
 			]
 		},
@@ -140,10 +171,12 @@
       "directions": "Mix the lettuce with the dressing.",
 			"ingredients": [
 				{
-					"ingredient": "Romain lettuce"
+					"ingredient": "Romain lettuce",
+          "count": 0
 				},
 				{
-					"ingredient": "Caesar salad dressing"
+					"ingredient": "Caesar salad dressing",
+          "count": 0
 				}
 			]
 		}
