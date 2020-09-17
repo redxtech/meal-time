@@ -6,15 +6,7 @@
 		<sec id="meals" main>
 			<section-title>Meals</section-title>
 			<div class="meals">
-				<meal
-					v-for="meal in meals"
-					:key="meal.title"
-					:title="meal.title"
-					:description="meal.description"
-					:ingredients="meal.ingredients"
-					:type="meal.type"
-					@add="addMeal(meal)"
-				/>
+				<meal v-for="meal in meals" :key="meal.title" :meal="meal" />
 			</div>
 		</sec>
 		<sec id="weekly">
@@ -26,8 +18,12 @@
 		<sec id="ingredients">
 			<section-title>Ingredients</section-title>
 			<div class="ingredients">
-				<div v-for="ingredient in ingredients" :key="ingredient">
-					<p v-text="ingredient" />
+				<div v-for="ingredient in Object.keys(ingredients)" :key="ingredient">
+					<p v-if="ingredients[ingredient].count">
+						{{ ingredients[ingredient].count }} x {{ ingredient
+						}}{{ ingredients[ingredient].uncounted ? '*' : '' }}
+					</p>
+					<p v-else v-text="ingredient" />
 				</div>
 			</div>
 		</sec>
@@ -35,6 +31,8 @@
 </template>
 
 <script>
+	import { mapGetters } from 'vuex'
+
 	import { meals } from './assets/content/meals.json'
 	import Meal from './components/meal.vue'
 	import Container from './components/layout/Container.vue'
@@ -51,20 +49,8 @@
 				selected: []
 			}
 		},
-		methods: {
-			addMeal(meal) {
-				this.selected.push(meal)
-			}
-		},
 		computed: {
-			ingredients() {
-				// noinspection JSUnresolvedVariable
-				return [
-					...new Set(
-						this.selected.map(m => m.ingredients.map(i => i.ingredient)).flat()
-					)
-				]
-			}
+			...mapGetters(['ingredients'])
 		}
 	}
 </script>

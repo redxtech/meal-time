@@ -1,8 +1,8 @@
 <template>
 	<box class="meal">
-		<element-title bold>{{ title }}</element-title>
-		<p class="description" v-text="description" />
-		<btn type="secondary" colour="blue" @click="$emit('add')">
+		<element-title bold>{{ meal.title }}</element-title>
+		<p class="description" v-text="meal.description" />
+		<btn type="secondary" colour="blue" @click="add">
 			add
 			<template #tailing>
 				<svg
@@ -21,10 +21,31 @@
 				</svg>
 			</template>
 		</btn>
+		<btn type="secondary" colour="blue" @click="remove">
+			remove
+			<template #tailing>
+				<svg
+					class="w-4 h-4"
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M20 12H4"
+					/>
+				</svg>
+			</template>
+		</btn>
 	</box>
 </template>
 
 <script>
+	import { mapActions } from 'vuex'
+
 	import Box from './elements/Box.vue'
 	import ElementTitle from './titles/ElementTitle.vue'
 	import Btn from './elements/Btn.vue'
@@ -33,23 +54,19 @@
 		name: 'Meal',
 		components: { Btn, ElementTitle, Box },
 		props: {
-			title: {
-				type: String,
+			meal: {
+				type: Object,
 				required: true
-			},
-			description: {
-				type: String,
-				required: true
-			},
-			ingredients: {
-				type: Array,
-				required: true
-			},
-			type: {
-				type: String,
-				required: true,
-				validator: val => ['Main', 'Side'].some(i => i === val)
 			}
+		},
+		methods: {
+			add() {
+				this.addMeal({ meal: this.meal })
+			},
+			remove() {
+				this.removeMeal({ meal: this.meal })
+			},
+			...mapActions(['addMeal', 'removeMeal'])
 		}
 	}
 </script>
