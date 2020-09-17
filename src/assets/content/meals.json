@@ -3,6 +3,7 @@
 		{
 			"title": "Pierogies",
 			"description": "Tasty pierogies",
+			"directions": "Cook the pierogies in a pot.",
 			"ingredients": [
 				{
 					"ingredient": "Pierogies"
@@ -34,6 +35,7 @@
 		{
 			"title": "Burger",
 			"description": "A tasty burger.",
+      "directions": "Grill the burger on the barbecue.",
 			"ingredients": [
 				{
 					"ingredient": "Burger patty"
@@ -77,6 +79,7 @@
 		{
 			"title": "Hot Dogs / Smokies",
 			"description": "Some tasty hot dogs or smokies.",
+      "directions": "Grill the hot dogs/smokies on the barbecue.",
 			"ingredients": [
 				{
 					"ingredient": "Hot dogs (or smokies)"
@@ -102,6 +105,7 @@
 		{
 			"title": "Scrambled Eggs",
 			"description": "Some very nice scrambled eggs.",
+      "directions": "Scramble the eggs in a pan.",
 			"ingredients": [
 				{
 					"ingredient": "Eggs"
@@ -119,6 +123,7 @@
 			"type": "Main",
 			"title": "Sausages",
 			"description": "Some tasty sausages.",
+      "directions": "Grill the sausages on the barbecue.",
 			"ingredients": [
 				{
 					"ingredient": "Sausages"
@@ -132,6 +137,7 @@
 			"type": "Side",
 			"title": "Caesar Salad",
 			"description": "A very good caesar salad",
+      "directions": "Mix the lettuce with the dressing.",
 			"ingredients": [
 				{
 					"ingredient": "Romain lettuce"

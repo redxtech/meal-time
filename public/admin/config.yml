@@ -23,6 +23,9 @@ collections:
               - label: Description
                 name: description
                 widget: string
+              - label: Directions
+                name: directions
+                widget: markdown
               - label: Ingredients
                 name: ingredients
                 widget: list
