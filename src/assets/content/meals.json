@@ -204,6 +204,27 @@
         "Lunch",
         "Dinner"
       ]
+    },
+    {
+      "type": "Main",
+      "mealtimes": [
+        "Lunch",
+        "Dinner",
+        "Breakfast"
+      ],
+      "title": "Granola",
+      "description": "The best granola there is.",
+      "directions": "Pour granola into bowl. Pour milk into bowl. Enjoy!",
+      "ingredients": [
+        {
+          "ingredient": "Granola",
+          "count": 0
+        },
+        {
+          "ingredient": "Milk",
+          "count": 0
+        }
+      ]
     }
   ]
 }
