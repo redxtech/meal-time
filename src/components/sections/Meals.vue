@@ -25,6 +25,6 @@
 
 <style scoped>
 	.meals {
-		@apply grid grid-cols-5 gap-4;
+		@apply flex flex-row flex-wrap;
 	}
 </style>
