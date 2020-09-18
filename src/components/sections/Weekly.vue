@@ -121,7 +121,30 @@
 					native.stopImmediatePropagation()
 				}
 			},
-			...mapActions(['addMealToDay', 'removeMealFromDay'])
+			save() {
+				window.location.hash = this.encodeState(this.$store.state)
+				window.navigator.clipboard
+					.writeText(window.location.href)
+					.then()
+					.catch(err => console.error(err))
+			},
+			// randomize() {
+			// 	console.log('randomizing...')
+			// },
+			clear() {
+				this.clearMeals()
+			},
+			encodeState(state) {
+				const string = JSON.stringify(state)
+				const codeUnits = new Uint16Array(string.length)
+				for (let i = 0; i < codeUnits.length; i++) {
+					codeUnits[i] = string.charCodeAt(i)
+				}
+				return encodeURIComponent(
+					btoa(String.fromCharCode(...new Uint8Array(codeUnits.buffer)))
+				)
+			},
+			...mapActions(['addMealToDay', 'removeMealFromDay', 'clearMeals'])
 		},
 		computed: {
 			...mapGetters(['meal'])
