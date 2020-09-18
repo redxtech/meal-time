@@ -134,15 +134,18 @@
 			clear() {
 				this.clearMeals()
 			},
-			encodeState(state) {
-				const string = JSON.stringify(state)
+			toBinary(string) {
 				const codeUnits = new Uint16Array(string.length)
 				for (let i = 0; i < codeUnits.length; i++) {
 					codeUnits[i] = string.charCodeAt(i)
 				}
-				return encodeURIComponent(
-					btoa(String.fromCharCode(...new Uint8Array(codeUnits.buffer)))
-				)
+				return String.fromCharCode(...new Uint8Array(codeUnits.buffer))
+			},
+			encodeState(state) {
+				const string = JSON.stringify(state)
+				const binary = this.toBinary(string)
+				const base64 = btoa(binary)
+				return encodeURIComponent(base64)
 			},
 			...mapActions(['addMealToDay', 'removeMealFromDay', 'clearMeals'])
 		},
