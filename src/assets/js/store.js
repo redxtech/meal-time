@@ -8,13 +8,52 @@ import Vuex from 'vuex'
 
 export default new Vuex.Store({
 	state: {
-		ingredients: {}
+		ingredients: {},
+		days: {
+			Sunday: {
+				Breakfast: [],
+				Lunch: [],
+				Dinner: []
+			},
+			Monday: {
+				Breakfast: [],
+				Lunch: [],
+				Dinner: []
+			},
+			Tuesday: {
+				Breakfast: [],
+				Lunch: [],
+				Dinner: []
+			},
+			Wednesday: {
+				Breakfast: [],
+				Lunch: [],
+				Dinner: []
+			},
+			Thursday: {
+				Breakfast: [],
+				Lunch: [],
+				Dinner: []
+			},
+			Friday: {
+				Breakfast: [],
+				Lunch: [],
+				Dinner: []
+			},
+			Saturday: {
+				Breakfast: [],
+				Lunch: [],
+				Dinner: []
+			}
+		}
 	},
 	getters: {
-		ingredients: state => state.ingredients
+		ingredients: state => state.ingredients,
+		dayOfWeek: state => day => state.days[day],
+		meal: state => (day, mealtime) => state.days[day][mealtime]
 	},
 	mutations: {
-		addMeal: (state, meal) => {
+		addMeal: (state, { meal }) => {
 			for (const ingredient of meal.ingredients) {
 				// noinspection JSUnresolvedVariable
 				const name = ingredient.ingredient
@@ -30,7 +69,7 @@ export default new Vuex.Store({
 				}
 			}
 		},
-		removeMeal: (state, meal) => {
+		removeMeal: (state, { meal }) => {
 			for (const ingredient of meal.ingredients) {
 				// noinspection JSUnresolvedVariable
 				const name = ingredient.ingredient
@@ -53,11 +92,28 @@ export default new Vuex.Store({
 					delete state.ingredients[name]
 				}
 			}
+		},
+		addMealToDay: (state, { day, mealtime, meal }) => {
+			state.days[day][mealtime].push(meal)
+		},
+		removeMealFromDay: (state, { day, mealtime, meal }) => {
+			const index = state.days[day][mealtime].findIndex(
+				m => m.title === meal.title
+			)
+			state.days[day][mealtime].splice(index, 1)
 		}
 	},
 	actions: {
-		addMeal: (ctx, { meal }) => ctx.commit('addMeal', meal),
-		removeMeal: (ctx, { meal }) => ctx.commit('removeMeal', meal)
+		addMeal: (ctx, { meal }) => ctx.commit('addMeal', { meal }),
+		removeMeal: (ctx, { meal }) => ctx.commit('removeMeal', { meal }),
+		addMealToDay: (ctx, { day, mealtime, meal }) => {
+			ctx.commit('addMealToDay', { day, mealtime, meal })
+			ctx.commit('addMeal', { meal })
+		},
+		removeMealFromDay: (ctx, { day, mealtime, meal }) => {
+			ctx.commit('removeMealFromDay', { day, mealtime, meal })
+			ctx.commit('removeMeal', { meal })
+		}
 	}
 	// plugins: [vuexLocal.plugin]
 })

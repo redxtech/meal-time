@@ -61,12 +61,17 @@
 		},
 		methods: {
 			add() {
-				this.addMeal({ meal: this.meal })
+				this.addMealToDay({
+					day: 'Sunday',
+					mealtime: 'Breakfast',
+					meal: this.meal
+				})
+				// this.addMeal({ meal: this.meal })
 			},
 			remove() {
 				this.removeMeal({ meal: this.meal })
 			},
-			...mapActions(['addMeal', 'removeMeal'])
+			...mapActions(['addMealToDay', 'removeMeal'])
 		}
 	}
 </script>
