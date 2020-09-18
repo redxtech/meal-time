@@ -65,11 +65,9 @@
 		</div>
 		<div class="my-3">
 			<btn type="secondary" colour="green" class="mx-1" @click="save">Save</btn>
-			<!--
 			<btn type="secondary" colour="blue" class="mx-1" @click="randomize">
 				Randomize
 			</btn>
-			-->
 			<btn type="secondary" colour="red" class="mx-1" @click="clear">Clear</btn>
 		</div>
 	</sec>
@@ -83,6 +81,8 @@
 	import ElementTitle from '../titles/ElementTitle.vue'
 	import Drop from '../elements/Drop.vue'
 	import Btn from '../elements/Btn.vue'
+
+	import { meals } from '../../assets/content/meals.json'
 
 	export default {
 		name: 'Weekly',
@@ -98,7 +98,8 @@
 					'Friday',
 					'Saturday'
 				],
-				mealtimes: ['Breakfast', 'Lunch', 'Dinner']
+				mealtimes: ['Breakfast', 'Lunch', 'Dinner'],
+				meals
 			}
 		},
 		methods: {
@@ -128,9 +129,24 @@
 					.then()
 					.catch(err => console.error(err))
 			},
-			// randomize() {
-			// 	console.log('randomizing...')
-			// },
+			randomize() {
+				for (const day of this.days) {
+					const added = []
+					for (const mealtime of this.mealtimes) {
+						const available = this.meals
+							.filter(m => m.type === 'Main')
+							.filter(m => m.mealtimes.includes(mealtime))
+							.filter(m => added.every(a => a.title !== m.title))
+
+						const selected =
+							available[Math.floor(Math.random() * available.length)]
+
+						added.push(selected)
+
+						this.addMealToDay({ day, mealtime, meal: selected })
+					}
+				}
+			},
 			clear() {
 				this.clearMeals()
 			},

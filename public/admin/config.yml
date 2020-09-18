@@ -37,5 +37,11 @@ collections:
                 widget: select
                 options: [ Main, Side ]
                 default: Main
+              - label: Mealtimes
+                name: mealtimes
+                widget: select
+                options: [ Breakfast, Lunch, Dinner ]
+                multiple: true
+                default: [ Lunch, Dinner ]
     editor:
       preview: false
