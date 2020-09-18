@@ -63,20 +63,30 @@
 				</div>
 			</div>
 		</div>
+		<div class="my-3">
+			<btn type="secondary" colour="green" class="mx-1" @click="save">Save</btn>
+			<!--
+			<btn type="secondary" colour="blue" class="mx-1" @click="randomize">
+				Randomize
+			</btn>
+			-->
+			<btn type="secondary" colour="red" class="mx-1" @click="clear">Clear</btn>
+		</div>
 	</sec>
 </template>
 
 <script>
-	import { mapGetters, mapActions } from 'vuex'
+	import { mapActions, mapGetters } from 'vuex'
 
 	import Sec from '../layout/Sec.vue'
 	import SectionTitle from '../titles/SectionTitle.vue'
 	import ElementTitle from '../titles/ElementTitle.vue'
 	import Drop from '../elements/Drop.vue'
+	import Btn from '../elements/Btn.vue'
 
 	export default {
 		name: 'Weekly',
-		components: { ElementTitle, Sec, SectionTitle, Drop },
+		components: { Btn, ElementTitle, Sec, SectionTitle, Drop },
 		data() {
 			return {
 				days: [

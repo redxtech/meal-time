@@ -16,6 +16,20 @@ module.exports = {
 				hover:
 					'0 20px 25px -5px rgba(0, 0, 0, .1), 0 3px 5px -1px rgba(0, 0, 0, .2), 0 5px 8px 0 rgba(0, 0, 0, .14), 0 1px 14px 0 rgba(0, 0, 0, .12)'
 			},
+			colors: {
+				white: {
+					default: '#fff',
+					100: '#fff',
+					200: '#fff',
+					300: '#fff',
+					400: '#fff',
+					500: '#fff',
+					600: '#fff',
+					700: '#fff',
+					800: '#fff',
+					900: '#fff'
+				}
+			},
 			container: {
 				center: true
 			},

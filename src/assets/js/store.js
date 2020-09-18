@@ -101,6 +101,14 @@ export default new Vuex.Store({
 				m => m.title === meal.title
 			)
 			state.days[day][mealtime].splice(index, 1)
+		},
+		clearMeals: state => {
+			for (const day of Object.keys(state.days)) {
+				for (const mealtime of Object.keys(state.days[day])) {
+					state.days[day][mealtime] = []
+				}
+			}
+			state.ingredients = {}
 		}
 	},
 	actions: {
@@ -113,7 +121,8 @@ export default new Vuex.Store({
 		removeMealFromDay: (ctx, { day, mealtime, meal }) => {
 			ctx.commit('removeMealFromDay', { day, mealtime, meal })
 			ctx.commit('removeMeal', { meal })
-		}
+		},
+		clearMeals: ctx => ctx.commit('clearMeals')
 	}
 	// plugins: [vuexLocal.plugin]
 })
