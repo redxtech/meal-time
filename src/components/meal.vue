@@ -1,19 +1,19 @@
 <template>
-	<span
+	<drag
+		tag="span"
+		:transfer-data="meal"
 		type="button"
-		class="meal inline-flex items-center m-1 px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-50 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-indigo-200 transition ease-in-out duration-150"
+		class="meal"
 		v-text="meal.title"
 	/>
 </template>
 
 <script>
-	import Box from './elements/Box.vue'
-	import ElementTitle from './titles/ElementTitle.vue'
-	import Btn from './elements/Btn.vue'
+	import Drag from './elements/Drag.vue'
 
 	export default {
 		name: 'Meal',
-		components: { Btn, ElementTitle, Box },
+		components: { Drag },
 		props: {
 			meal: {
 				type: Object,
@@ -25,18 +25,18 @@
 
 <style scoped>
 	.meal {
-		@apply inline-flex items-center m-1 px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-700 bg-indigo-100 cursor-pointer transition ease-in-out duration-150;
+		@apply inline-flex items-center m-1 px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-blue-700 bg-blue-100 cursor-pointer transition ease-in-out duration-150;
 
 		&:hover {
-			@apply bg-indigo-50;
+			@apply bg-blue-50;
 		}
 
 		&:focus {
-			@apply outline-none border-indigo-300 shadow-outline-indigo;
+			@apply outline-none border-blue-300 shadow-outline-blue;
 		}
 
 		&:active {
-			@apply bg-indigo-200;
+			@apply bg-blue-200;
 		}
 	}
 </style>

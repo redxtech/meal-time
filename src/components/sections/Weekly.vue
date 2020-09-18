@@ -10,7 +10,14 @@
 					class="mealtime"
 					:class="mealtime.toLowerCase()"
 				>
-					<div class="selected-meals">
+					<drop
+						class="selected-meals"
+						@drop="
+							(data, native) => handleDrop({ day, mealtime }, data, native)
+						"
+						@dragenter="enter"
+						@dragleave="leave"
+					>
 						<span
 							v-for="main in meal(day, mealtime).filter(m => m.type === 'Main')"
 							:key="main.title"
@@ -51,7 +58,7 @@
 								</svg>
 							</button>
 						</span>
-					</div>
+					</drop>
 					<span class="label" v-text="mealtime" />
 				</div>
 			</div>
@@ -65,10 +72,11 @@
 	import Sec from '../layout/Sec.vue'
 	import SectionTitle from '../titles/SectionTitle.vue'
 	import ElementTitle from '../titles/ElementTitle.vue'
+	import Drop from '../elements/Drop.vue'
 
 	export default {
 		name: 'Weekly',
-		components: { ElementTitle, Sec, SectionTitle },
+		components: { ElementTitle, Sec, SectionTitle, Drop },
 		data() {
 			return {
 				days: [
@@ -84,7 +92,26 @@
 			}
 		},
 		methods: {
-			...mapActions(['removeMealFromDay'])
+			handleDrop({ day, mealtime }, data, native) {
+				if (native?.target.classList) {
+					this.addMealToDay({ day, mealtime, meal: data })
+					native.target.classList.remove('bg-blue-400')
+					native.stopImmediatePropagation()
+				}
+			},
+			enter(data, native) {
+				if (native?.target.classList) {
+					native.target.classList.add('bg-blue-400')
+					native.stopImmediatePropagation()
+				}
+			},
+			leave(data, native) {
+				if (native?.target.classList) {
+					native.target.classList.remove('bg-blue-400')
+					native.stopImmediatePropagation()
+				}
+			},
+			...mapActions(['addMealToDay', 'removeMealFromDay'])
 		},
 		computed: {
 			...mapGetters(['meal'])
@@ -116,7 +143,7 @@
 					@apply flex-grow p-3;
 
 					.badge {
-						@apply inline-flex items-center py-0.5 rounded-full font-medium;
+						@apply inline-flex items-center m-0.5 py-0.5 rounded-full font-medium;
 
 						&-main {
 							@apply px-3 text-sm leading-5 bg-green-100 text-green-800;
@@ -157,7 +184,7 @@
 				}
 
 				.label {
-					@apply text-center text-gray-500 text-sm;
+					@apply text-center text-gray-500 text-sm py-1;
 				}
 			}
 
