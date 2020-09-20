@@ -225,6 +225,21 @@
           "count": 0
         }
       ]
+    },
+    {
+      "type": "Main",
+      "mealtimes": [
+        "Dinner"
+      ],
+      "title": "Ramen",
+      "description": "The easiest type of meal to cook.",
+      "directions": "1. Add ramen into bowl.\n2. Add hot water into bowl.\n3. Wait.\n4. Consume.",
+      "ingredients": [
+        {
+          "ingredient": "Ramen",
+          "count": 1
+        }
+      ]
     }
   ]
 }
