@@ -48,7 +48,10 @@
 								<h5 class="text-base leading-6 font-bold text-gray-700">
 									Directions:
 								</h5>
-								<marked :markdown="meal.directions" marked-class="prose" />
+								<marked
+									:markdown="meal.directions"
+									marked-class="prose prose-sm"
+								/>
 							</div>
 							<div class="mt-2">
 								<p class="text-base leading-5 text-gray-700">
@@ -77,6 +80,7 @@
 <script>
 	import Btn from './Btn.vue'
 	import Marked from '../Marked.vue'
+
 	export default {
 		name: 'MealModal',
 		components: { Marked, Btn },

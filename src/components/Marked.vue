@@ -6,7 +6,7 @@
 <script>
 	import marked from 'marked'
 	import dedent from 'dedent'
-	import sanitize from 'sanitize-html'
+	import DOMPurify from 'dompurify'
 
 	export default {
 		name: 'Marked',
@@ -25,21 +25,6 @@
 				type: String,
 				required: false,
 				default: 'markdown'
-			},
-			sanitizeOptions: {
-				type: Object,
-				required: false,
-				default() {
-					return {
-						allowedTags: ['h1', 'h2', ...sanitize.defaults.allowedTags],
-						allowedAttributes: {
-							h1: ['class', 'id'],
-							h2: ['class', 'id'],
-							h3: ['class', 'id'],
-							...sanitize.defaults.allowedAttributes
-						}
-					}
-				}
 			},
 			options: {
 				type: Object,
@@ -62,7 +47,7 @@
 				const stripped = this.dedent ? dedent(markdown) : markdown
 
 				// Parse the markdown with marked and then sanitize it
-				return sanitize(marked(stripped, this.options), this.sanitizeOptions)
+				return DOMPurify.sanitize(marked(stripped, this.options))
 			}
 		}
 	}
