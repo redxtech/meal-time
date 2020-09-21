@@ -42,13 +42,10 @@
 							v-for="side in sides(day, mealtime)"
 							:key="side.title"
 							class="badge badge-side"
+							@click="removeMealFromDay({ day, mealtime, meal: side })"
 						>
 							{{ side.title }}
-							<button
-								type="button"
-								:aria-label="`Remove ${side.title}`"
-								@click="removeMealFromDay({ day, mealtime, meal: side })"
-							>
+							<button type="button" :aria-label="`Remove ${side.title}`">
 								<svg stroke="currentColor" fill="none" viewBox="0 0 8 8">
 									<path
 										stroke-linecap="round"
