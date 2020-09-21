@@ -52,3 +52,11 @@
 		}
 	}
 </script>
+
+<style>
+	.prose-sm ol > li {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-left: 1rem !important;
+	}
+</style>
