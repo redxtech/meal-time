@@ -43,5 +43,10 @@ collections:
                 options: [ Breakfast, Lunch, Dinner ]
                 multiple: true
                 default: [ Lunch, Dinner ]
+              - label: Exclude from randomize
+                name: exclude
+                widget: boolean
+                default: false
+                required: false
     editor:
       preview: false
