@@ -31,7 +31,7 @@ collections:
                 widget: list
                 fields:
                   - { label: Ingredient, name: ingredient, widget: string }
-                  - { label: Quantity, name: count, widget: number }
+                  - { label: Quantity, name: count, widget: number, default: 0 }
               - label: Type
                 name: type
                 widget: select
