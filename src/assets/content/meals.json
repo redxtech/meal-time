@@ -271,6 +271,45 @@
       "title": "Eating Out",
       "description": "Going to a restaurant or something of the sort.",
       "directions": "1. Choose restaurant.\n2. Go to restaurant.\n3. Eat.\n4. Pay.\n5. Leave."
+    },
+    {
+      "type": "Main",
+      "mealtimes": [
+        "Dinner"
+      ],
+      "title": "Divorced Chicken",
+      "description": "Definitely its real name.",
+      "directions": "1. Microwave divorced chicken.\n2. Tear apart and put pulled chicken onto plate.\n3. Apply Frank's liberally.\n4. Salt & pepper.",
+      "ingredients": [
+        {
+          "count": 1,
+          "ingredient": "Divorced Chicken"
+        },
+        {
+          "count": 0,
+          "ingredient": "Frank's"
+        }
+      ]
+    },
+    {
+      "type": "Main",
+      "mealtimes": [
+        "Lunch",
+        "Dinner"
+      ],
+      "title": "Wings",
+      "description": "Frank's wings.",
+      "directions": "1. Put wings in a large Ziploc.\n2. Add Frank's to the Ziploc (make the wings swim).\n3. Put in fridge overnight.\n4. Take out of bag and put straight onto the grill.\n5. Flip after a few minutes.\n6. Take off the grill and onto plate.\n7. Add more Frank's onto individual wings before consumption.",
+      "ingredients": [
+        {
+          "count": 12,
+          "ingredient": "Wings"
+        },
+        {
+          "count": 1,
+          "ingredient": "Frank's"
+        }
+      ]
     }
   ]
 }
