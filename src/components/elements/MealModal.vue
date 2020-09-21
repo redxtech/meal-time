@@ -53,6 +53,27 @@
 									marked-class="prose prose-sm"
 								/>
 							</div>
+							<div
+								v-if="meal.ingredients && meal.ingredients.length"
+								class="mt-2"
+							>
+								<h5 class="text-base leading-6 font-bold text-gray-700">
+									Ingredients:
+								</h5>
+								<ul>
+									<!--suppress JSUnresolvedVariable -->
+									<li
+										v-for="ingredient in meal.ingredients"
+										:key="ingredient.ingredient"
+										class="text-gray-800 prose prose-sm"
+									>
+										<span v-if="ingredient.count" class="prefix">
+											{{ ingredient.count }} x
+										</span>
+										{{ ingredient.ingredient }}
+									</li>
+								</ul>
+							</div>
 							<div class="mt-2">
 								<p class="text-base leading-5 text-gray-700">
 									<span class="font-bold">Type: </span> {{ meal.type }}
@@ -102,3 +123,9 @@
 		}
 	}
 </script>
+
+<style scoped>
+	.prefix {
+		color: #6b7280;
+	}
+</style>
