@@ -54,18 +54,20 @@ export default new Vuex.Store({
 	},
 	mutations: {
 		addMeal: (state, { meal }) => {
-			for (const ingredient of meal.ingredients) {
-				// noinspection JSUnresolvedVariable
-				const name = ingredient.ingredient
-				const count = ingredient.count
-				const uncounted = count ? 0 : 1
+			if (meal.ingredients && meal.ingredients.length) {
+				for (const ingredient of meal.ingredients) {
+					// noinspection JSUnresolvedVariable
+					const name = ingredient.ingredient
+					const count = ingredient.count
+					const uncounted = count ? 0 : 1
 
-				// if the ingredient has already been added increment its count
-				if (Object.hasOwnProperty.call(state.ingredients, name)) {
-					state.ingredients[name].count += count
-					state.ingredients[name].uncounted += uncounted
-				} else {
-					state.ingredients[name] = { count, uncounted }
+					// if the ingredient has already been added increment its count
+					if (Object.hasOwnProperty.call(state.ingredients, name)) {
+						state.ingredients[name].count += count
+						state.ingredients[name].uncounted += uncounted
+					} else {
+						state.ingredients[name] = { count, uncounted }
+					}
 				}
 			}
 		},
