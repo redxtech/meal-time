@@ -303,7 +303,6 @@
       "type": "Main",
       "mealtimes": [
         "Lunch",
-        "Dinner",
         "Breakfast"
       ],
       "title": "Eating Out",
