@@ -19,7 +19,7 @@
 						@dragleave="leave"
 					>
 						<span
-							v-for="main in meal(day, mealtime).filter(m => m.type === 'Main')"
+							v-for="main in mains(day, mealtime)"
 							:key="main.title"
 							class="badge badge-main"
 						>
@@ -39,7 +39,7 @@
 							</button>
 						</span>
 						<span
-							v-for="side in meal(day, mealtime).filter(m => m.type === 'Side')"
+							v-for="side in sides(day, mealtime)"
 							:key="side.title"
 							class="badge badge-side"
 						>
@@ -169,6 +169,14 @@
 			...mapActions(['addMealToDay', 'removeMealFromDay', 'clearMeals'])
 		},
 		computed: {
+			mains() {
+				return (day, mealtime) =>
+					this.meal(day, mealtime).filter(m => m.type === 'Main')
+			},
+			sides() {
+				return (day, mealtime) =>
+					this.meal(day, mealtime).filter(m => m.type === 'Side')
+			},
 			...mapGetters(['meal'])
 		}
 	}
