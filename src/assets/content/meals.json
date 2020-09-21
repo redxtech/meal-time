@@ -263,17 +263,6 @@
     {
       "type": "Main",
       "mealtimes": [
-        "Lunch",
-        "Dinner",
-        "Breakfast"
-      ],
-      "title": "Eating Out",
-      "description": "Going to a restaurant or something of the sort.",
-      "directions": "1. Choose restaurant.\n2. Go to restaurant.\n3. Eat.\n4. Pay.\n5. Leave."
-    },
-    {
-      "type": "Main",
-      "mealtimes": [
         "Dinner"
       ],
       "title": "Divorced Chicken",
@@ -309,6 +298,18 @@
           "ingredient": "Frank's"
         }
       ]
+    },
+    {
+      "type": "Main",
+      "mealtimes": [
+        "Lunch",
+        "Dinner",
+        "Breakfast"
+      ],
+      "title": "Eating Out",
+      "description": "Going to a restaurant or something of the sort.",
+      "directions": "1. Choose restaurant.\n2. Go to restaurant.\n3. Eat.\n4. Pay.\n5. Leave.",
+      "exclude": true
     }
   ]
 }
