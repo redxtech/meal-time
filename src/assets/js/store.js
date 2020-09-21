@@ -72,26 +72,28 @@ export default new Vuex.Store({
 			}
 		},
 		removeMeal: (state, { meal }) => {
-			for (const ingredient of meal.ingredients) {
-				// noinspection JSUnresolvedVariable
-				const name = ingredient.ingredient
-				const count = ingredient.count
+			if (meal.ingredients && meal.ingredients.length) {
+				for (const ingredient of meal.ingredients) {
+					// noinspection JSUnresolvedVariable
+					const name = ingredient.ingredient
+					const count = ingredient.count
 
-				if (Object.hasOwnProperty.call(state.ingredients, name)) {
-					if (count === 0) {
-						state.ingredients[name].uncounted--
-					} else {
-						state.ingredients[name].count -= count
+					if (Object.hasOwnProperty.call(state.ingredients, name)) {
+						if (count === 0) {
+							state.ingredients[name].uncounted--
+						} else {
+							state.ingredients[name].count -= count
+						}
 					}
-				}
 
-				// remove the ingredient if its counts are all 0
-				if (
-					state.ingredients[name].count <= 0 &&
-					state.ingredients[name].uncounted <= 0
-				) {
-					state.ingredients[name] = undefined
-					delete state.ingredients[name]
+					// remove the ingredient if its counts are all 0
+					if (
+						state.ingredients[name].count <= 0 &&
+						state.ingredients[name].uncounted <= 0
+					) {
+						state.ingredients[name] = undefined
+						delete state.ingredients[name]
+					}
 				}
 			}
 		},
