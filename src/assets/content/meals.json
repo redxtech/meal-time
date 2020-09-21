@@ -2,8 +2,8 @@
   "meals": [
     {
       "title": "Pierogies",
-      "description": "Tasty pierogies",
-      "directions": "Cook the pierogies in a pot.",
+      "description": "Tasty pierogies.",
+      "directions": "1. Boil pierogies until they float (salted water).\n2. Caramelize some onions.\n3. Put into frying pan with butter.\n4. Take out of pan and put onto plate when golden-brown.\n5. Top with cheese, bacon bits, caramelized onions, and chives - sour cream on the side.\n6. Optional: add Frank's hot sauce for some spice.",
       "ingredients": [
         {
           "ingredient": "Pierogies",
@@ -47,7 +47,7 @@
     {
       "title": "Burger",
       "description": "A tasty borgar.",
-      "directions": "Grill the burger on the barbecue.",
+      "directions": "1. Put a patty on the grill - 6 minutes on medium heat with the grill open.\n2. Caramelize some onions.\n3. Fry some bacon.\n4. Put some mayo on the top bun, and two pickle slices on the bottom bun.\n5. Flip the burger after 6 minutes, place a slice of cheese (Monterey Jack is recommended, cheddar is the next best) on the top of the patty. Leave on for 6 more minutes.\n6. After 6 minutes, take the burger off the grill, and place (cheese side down) onto the bottom bun (the one with pickles).\n7. Add ketchup, mustard, Frank's, and seasoning (A&W burger seasoning is best, Club House's Montreal Steak Spice is a close second), bacon,  tomato, lettuce, and onions.\n8. Eat.",
       "ingredients": [
         {
           "ingredient": "Burger patty",
@@ -74,15 +74,19 @@
           "count": 0
         },
         {
+          "count": 0,
+          "ingredient": "Mayonnaise"
+        },
+        {
           "ingredient": "Seasoning",
           "count": 0
         },
         {
-          "ingredient": "Bacon",
+          "ingredient": "Pickles",
           "count": 0
         },
         {
-          "ingredient": "Pickles",
+          "ingredient": "Bacon",
           "count": 0
         },
         {
@@ -106,8 +110,8 @@
     },
     {
       "title": "Hot Dogs",
-      "description": "Some tasty hot dogs or smokies.",
-      "directions": "Grill the hot dogs/smokies on the barbecue.",
+      "description": "Some tasty hot dogs (or smokies).",
+      "directions": "1. Put hot dogs on the grill at medium heat with the grill open\n2. Rotate every few minutes for 10 minutes, take off the grill.\n3. Line the buns with some chips and some cheese slices (cheddar is best).\n4. Put the hot dogs in the buns, add ketchup, mustard, and Frank's.",
       "ingredients": [
         {
           "ingredient": "Hot dogs (or smokies)",
@@ -132,6 +136,10 @@
         {
           "ingredient": "Chips",
           "count": 0
+        },
+        {
+          "count": 0,
+          "ingredient": "Frank's"
         }
       ],
       "type": "Main",
@@ -141,13 +149,17 @@
       ]
     },
     {
-      "title": "Scrambled Eggs",
+      "title": "Scrambled Eggs & Toast",
       "description": "Some very nice scrambled eggs.",
-      "directions": "Scramble the eggs in a pan.",
+      "directions": "1. Mix eggs and a slash of milk into a container.\n2. Once mixed, pour into hot pan (with butter).\n3. Mix around and prevent from burning until mostly cooked.\n4. Once mostly cooked, add some sharp cheddar (imperial cheese).\n5. Put the cinnamon raisin bread into the toaster.\n6. Keep mixing until all cooked (once they're no longer wet).\n7. Plate with buttered toast, salt and pepper.",
       "ingredients": [
         {
           "ingredient": "Eggs",
           "count": 4
+        },
+        {
+          "count": 0,
+          "ingredient": "Cinnamon Rasin Bread"
         },
         {
           "ingredient": "Milk",
@@ -156,6 +168,10 @@
         {
           "ingredient": "Sharp cheddar",
           "count": 0
+        },
+        {
+          "count": 0,
+          "ingredient": "Butter"
         }
       ],
       "type": "Main",
@@ -169,14 +185,14 @@
       "type": "Main",
       "title": "Sausages",
       "description": "Some tasty sausages.",
-      "directions": "Grill the sausages on the barbecue.",
+      "directions": "1. Grill two sausages on medium heat with the grill open.\n2. Rotate every few minutes.\n3. Plate with Dijon mustard.",
       "ingredients": [
         {
           "ingredient": "Sausages",
           "count": 2
         },
         {
-          "ingredient": "Mustard (dijon)",
+          "ingredient": "Mustard (Dijon)",
           "count": 0
         }
       ],
@@ -189,7 +205,7 @@
       "type": "Side",
       "title": "Caesar Salad",
       "description": "A very good caesar salad",
-      "directions": "Mix the lettuce with the dressing.",
+      "directions": "1. Wash the lettuce.\n2. Chop up the lettuce, put into large bowl.\n3. Add dressing.",
       "ingredients": [
         {
           "ingredient": "Romain lettuce",
@@ -214,7 +230,7 @@
       ],
       "title": "Granola",
       "description": "The best granola there is.",
-      "directions": "Pour granola into bowl. Pour milk into bowl. Enjoy!",
+      "directions": "1. Pour granola into bowl.\n2. Add milk.\n3. Add unfrozen berries.",
       "ingredients": [
         {
           "ingredient": "Granola",
@@ -223,6 +239,10 @@
         {
           "ingredient": "Milk",
           "count": 0
+        },
+        {
+          "count": 0,
+          "ingredient": "Unfrozen Berries"
         }
       ]
     },
@@ -233,7 +253,7 @@
       ],
       "title": "Ramen",
       "description": "The easiest type of meal to cook.",
-      "directions": "1. Add ramen into bowl.\n2. Add hot water into bowl.\n3. Wait.\n4. Consume.",
+      "directions": "1. Add ramen into bowl.\n2. Add hot water into bowl.\n3. Wait.\n4. Drain excess hot water (until water is level with noodles).\n5. Add broth powder.\n6. Consume.",
       "ingredients": [
         {
           "ingredient": "Ramen",
@@ -250,7 +270,7 @@
       ],
       "title": "Eating Out",
       "description": "Going to a restaurant or something of the sort.",
-      "directions": "1. Choose restaurant.\n2. Go to restaurant."
+      "directions": "1. Choose restaurant.\n2. Go to restaurant.\n3. Eat.\n4. Pay.\n5. Leave."
     }
   ]
 }
