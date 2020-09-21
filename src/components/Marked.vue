@@ -1,6 +1,6 @@
 <template>
 	<!-- eslint-disable-next-line vue/no-v-html -->
-	<div v-html="compiled" />
+	<div :class="markedClass" v-html="compiled" />
 </template>
 
 <script>
