@@ -2,7 +2,7 @@
 	<sec id="ingredients">
 		<section-title>Ingredients</section-title>
 		<ul class="ingredients prose">
-			<li v-for="ingredient in Object.keys(ingredients)" :key="ingredient">
+			<li v-for="ingredient in sortedIngredients" :key="ingredient">
 				<span v-if="ingredients[ingredient].count" class="prefix">
 					{{ ingredients[ingredient].count }} x
 				</span>
@@ -27,6 +27,11 @@
 		name: 'Ingredients',
 		components: { Sec, SectionTitle },
 		computed: {
+			sortedIngredients() {
+				return Object.keys(this.ingredients).sort(
+					(a, b) => this.ingredients[b].count - this.ingredients[a].count
+				)
+			},
 			...mapGetters(['ingredients'])
 		}
 	}
