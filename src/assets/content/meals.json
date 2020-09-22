@@ -303,6 +303,47 @@
       "type": "Main",
       "mealtimes": [
         "Lunch",
+        "Dinner"
+      ],
+      "exclude": false,
+      "title": "Black Bean Burritos",
+      "description": "Tasty burrito.",
+      "directions": "1. Thoroughly rinse the beans under cool, running water.  Set aside to drain.\n2. Meanwhile, chop the red pepper and red onion (finely for the onion - big chunks of onion are nasty!)\n3. Chop half a bunch of cilantro, if using.\n4. Mix beans, onions, red peppers, cilantro and protein (if you're adding it).\n5. Squeeze a lime into the mix, a tsp of olive oil, add a pinch of salt and chili to your taste. Start with just a bit (half a tsp if you are using the chipotle stuff. Trust me, it’s hot).\n6. Get your wrap ready with sour cream and spinach or lettuce, add black bean salsa mixture, add salsa, guacamole.\n7. Enjoy!\n\n**NOTE**: you can also add left over rice to this mixture for extra “oomph”. It will fill you up and stretch the recipe a bit further (more days without cooking!)\n\n**Extra:** Add left over black bean salsa to nachos or on top of lettuce with extra salsa as a salad. You can wrap it in wraps and coat with enchilada sauce (the fiesta stuff in a small bag) and cover with cheese for enchiladas. If you do this, just pour some enchilada mixture in the pan to coat the bottom BEFORE adding the wraps to the dish. Pour remaining sauce on top, add cheese and bake at 350 for 15-20 minutes. I would add sliced green onions to the top to make it pretty.",
+      "ingredients": [
+        {
+          "count": 1,
+          "ingredient": "Can of black beans"
+        },
+        {
+          "count": 1,
+          "ingredient": "Red pepper"
+        },
+        {
+          "count": 1,
+          "ingredient": "Red onion"
+        },
+        {
+          "count": 1,
+          "ingredient": "Lime"
+        },
+        {
+          "count": 0,
+          "ingredient": "Cilantro"
+        },
+        {
+          "count": 0,
+          "ingredient": "Olive oil"
+        },
+        {
+          "count": 0,
+          "ingredient": "Chili"
+        }
+      ]
+    },
+    {
+      "type": "Main",
+      "mealtimes": [
+        "Lunch",
         "Breakfast"
       ],
       "title": "Eating Out",
