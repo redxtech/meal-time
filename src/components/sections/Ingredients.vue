@@ -1,15 +1,19 @@
 <template>
 	<sec id="ingredients">
 		<section-title>Ingredients</section-title>
-		<div class="ingredients">
-			<div v-for="ingredient in Object.keys(ingredients)" :key="ingredient">
-				<p v-if="ingredients[ingredient].count">
-					{{ ingredients[ingredient].count }} x {{ ingredient
-					}}{{ ingredients[ingredient].uncounted ? '*' : '' }}
-				</p>
-				<p v-else v-text="ingredient" />
-			</div>
-		</div>
+		<ul class="ingredients prose">
+			<li v-for="ingredient in Object.keys(ingredients)" :key="ingredient">
+				<span v-if="ingredients[ingredient].count" class="prefix">
+					{{ ingredients[ingredient].count }} x
+				</span>
+				{{ ingredient
+				}}{{
+					ingredients[ingredient].count && ingredients[ingredient].uncounted
+						? '*'
+						: ''
+				}}
+			</li>
+		</ul>
 	</sec>
 </template>
 
@@ -27,3 +31,26 @@
 		}
 	}
 </script>
+
+<style scoped>
+	.ingredients {
+		@apply text-gray-800;
+
+		.prefix {
+			color: #6b7280;
+		}
+
+		li {
+			margin-top: 0.1rem !important;
+			margin-bottom: 0.1rem !important;
+
+			&:first-child {
+				margin-top: 0 !important;
+			}
+
+			&:last-child {
+				margin-bottom: 0 !important;
+			}
+		}
+	}
+</style>
