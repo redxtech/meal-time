@@ -130,19 +130,27 @@
 				for (const day of this.days) {
 					const added = []
 					for (const mealtime of this.mealtimes) {
-						if (!this.meal(day, mealtime).length) {
+						const mealtimeMeals = this.meal(day, mealtime)
+						if (!mealtimeMeals.length) {
 							const available = this.meals
 								.filter(m => !m.exclude)
 								.filter(m => m.type === 'Main')
 								.filter(m => m.mealtimes.includes(mealtime))
-								.filter(m => added.every(a => a.title !== m.title))
 
-							const selected =
-								available[Math.floor(Math.random() * available.length)]
+							const notAddedYet = available.filter(m =>
+								added.every(a => a.title !== m.title)
+							)
+
+							const selected = notAddedYet.length
+								? notAddedYet[Math.floor(Math.random() * notAddedYet.length)]
+								: available[Math.floor(Math.random() * available.length)]
 
 							added.push(selected)
-
 							this.addMealToDay({ day, mealtime, meal: selected })
+						} else {
+							for (const meal of mealtimeMeals) {
+								added.push(this.meals.find(m => m.title === meal.title))
+							}
 						}
 					}
 				}
