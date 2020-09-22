@@ -308,7 +308,7 @@
       "exclude": false,
       "title": "Black Bean Burritos",
       "description": "Tasty burrito.",
-      "directions": "1. Thoroughly rinse the beans under cool, running water.  Set aside to drain.\n2. Meanwhile, chop the red pepper and red onion (finely for the onion - big chunks of onion are nasty!)\n3. Chop half a bunch of cilantro, if using.\n4. Mix beans, onions, red peppers, cilantro and protein (if you're adding it).\n5. Squeeze a lime into the mix, a tsp of olive oil, add a pinch of salt and chili to your taste. Start with just a bit (half a tsp if you are using the chipotle stuff. Trust me, it’s hot).\n6. Get your wrap ready with sour cream and spinach or lettuce, add black bean salsa mixture, add salsa, guacamole.\n7. Enjoy!\n\n**NOTE**: you can also add left over rice to this mixture for extra “oomph”. It will fill you up and stretch the recipe a bit further (more days without cooking!)\n\n**Extra:** Add left over black bean salsa to nachos or on top of lettuce with extra salsa as a salad. You can wrap it in wraps and coat with enchilada sauce (the fiesta stuff in a small bag) and cover with cheese for enchiladas. If you do this, just pour some enchilada mixture in the pan to coat the bottom BEFORE adding the wraps to the dish. Pour remaining sauce on top, add cheese and bake at 350 for 15-20 minutes. I would add sliced green onions to the top to make it pretty.",
+      "directions": "1. Thoroughly rinse the beans under cool, running water.  Set aside to drain.\n2. Meanwhile, chop the red pepper and red onion (finely for the onion - big chunks of onion are nasty!)\n3. Chop half a bunch of cilantro, if using.\n4. Mix beans, onions, red peppers, cilantro and protein (if you're adding it).\n5. Squeeze a lime into the mix, a tsp of olive oil, add a pinch of salt and chili to your taste. Start with just a bit (half a tsp if you are using the chipotle stuff. Trust me, it’s hot).\n6. Get your wrap ready with sour cream and spinach or lettuce, add black bean salsa mixture, add salsa, guacamole.\n7. Enjoy!\n\n**NOTE**: You can also add left over rice to this mixture for extra “oomph”. It will fill you up and stretch the recipe a bit further (more days without cooking!)\n\n**Extra:** Add left over black bean salsa to nachos or on top of lettuce with extra salsa as a salad. You can wrap it in wraps and coat with enchilada sauce (the fiesta stuff in a small bag) and cover with cheese for enchiladas. If you do this, just pour some enchilada mixture in the pan to coat the bottom BEFORE adding the wraps to the dish. Pour remaining sauce on top, add cheese and bake at 350 for 15-20 minutes. I would add sliced green onions to the top to make it pretty.",
       "ingredients": [
         {
           "count": 1,
@@ -337,6 +337,51 @@
         {
           "count": 0,
           "ingredient": "Chili"
+        }
+      ]
+    },
+    {
+      "type": "Main",
+      "mealtimes": [
+        "Lunch",
+        "Dinner"
+      ],
+      "exclude": false,
+      "title": "Spicy Bow Tie Pasta",
+      "description": "It's delicious.",
+      "directions": "1. Make the pasta, any shape will do. I KNOW you know how to do this. You can cook the whole box (up to 454 grams) so you have left overs or invite a friend to make a salad and join you for dinner. You will still have left overs.\n2. While the pasta is cooking, take the casing off 3-4 sausages and fry them at medium heat, breaking them up to smaller pieces.\n3. Drain the fat off by using a colander set in the sink with very hot water running so you don’t cause a fat clog in the drain. Let the hot water run for a minute once you finish draining the meat to make sure fat is gone from the drain. DO NOT get the sausage wet. All the flavour will go down the drain with the fat if you rinse the sausage itself.\n4. Return the sausage to the pan and make sure there are no pink bits.\n5. Add the ground tomatoes and the full bunch of parsley, chopped finely.\n6. Add herbs and simmer (this means low temperature) for 10 minutes.\n7. Last step is to add the cream. Make sure the heat is all the way down so you don’t boil your cream (it will break and get lumpy and nasty).\n8. Stir all together and serve.\n9. You can sprinkle extra parsley on top and grated cheese if you like. As you know, I like to add red pepper flakes for extra spice.\n\n**NOTE:** You can freeze leftover pasta with the sauce if you don’t get through it in 4 days. It won’t go bad after 4 days (it would take about a week) but it’s freshest (less mushy) in the first 4 days.",
+      "ingredients": [
+        {
+          "count": 1,
+          "ingredient": "Bow tie pasta"
+        },
+        {
+          "count": 4,
+          "ingredient": "Spicy Italian sausage"
+        },
+        {
+          "count": 0,
+          "ingredient": "Flat leafed parsley"
+        },
+        {
+          "count": 0,
+          "ingredient": "Ground tomato"
+        },
+        {
+          "count": 250,
+          "ingredient": "10% cream (ml)"
+        },
+        {
+          "count": 0,
+          "ingredient": "Onion powder"
+        },
+        {
+          "count": 0,
+          "ingredient": "Garlic powder"
+        },
+        {
+          "count": 0,
+          "ingredient": "Oregano"
         }
       ]
     },
