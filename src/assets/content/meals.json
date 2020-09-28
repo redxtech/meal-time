@@ -389,6 +389,132 @@
       "type": "Main",
       "mealtimes": [
         "Lunch",
+        "Dinner"
+      ],
+      "exclude": false,
+      "title": "Stir Fry (Beef & Broccoli)",
+      "description": "A stir fry with beef and broccoli.",
+      "ingredients": [
+        {
+          "count": 1,
+          "ingredient": "Flank Steak (lbs)"
+        },
+        {
+          "count": 1,
+          "ingredient": "Broccoli (lbs)"
+        },
+        {
+          "count": 0,
+          "ingredient": "Rice"
+        },
+        {
+          "count": 0,
+          "ingredient": "Olive oil"
+        },
+        {
+          "count": 2,
+          "ingredient": "Sesame seeds (tbsp)"
+        },
+        {
+          "count": 1,
+          "ingredient": "Fresh ginger (tbsp)"
+        },
+        {
+          "count": 3,
+          "ingredient": "Garlic (cloves)"
+        },
+        {
+          "count": 0,
+          "ingredient": "Hot water"
+        },
+        {
+          "count": 0,
+          "ingredient": "Soy sauce"
+        },
+        {
+          "count": 0,
+          "ingredient": "Brown sugar"
+        },
+        {
+          "count": 0,
+          "ingredient": "Corn starch"
+        },
+        {
+          "count": 0,
+          "ingredient": "Black pepper"
+        },
+        {
+          "count": 0,
+          "ingredient": "Sesame oil"
+        }
+      ],
+      "directions": "1. **Prep:** Start cooking white rice first so it's ready when the stir-fry is done. Cover and freeze steak for 30 minutes for easier slicing. Cut broccoli into 6 cups of florets.\n2. Combine all stir-fry sauce ingredients in a bowl, stir well to dissolve the sugar, and set aside.\n   * 1 tsp fresh ginger grated (loosely packed)\n   * 2 tsp garlic grated (from 3 cloves)\n   * 1/2 cup hot water\n   * 6 Tbsp [low sodium soy sauce](https://amzn.to/31N4CxU) (or GF Tamari)\n   * 3 Tbsp packed light brown sugar\n   * 1 1/2 Tbsp corn starch\n   * 1/4 tsp [black pepper](https://amzn.to/2xd5AWZ)\n   * 2 Tbsp [sesame oil](https://amzn.to/2H98YHC)\n3. Place a large skillet over medium heat and add 1 Tbsp oil.  Add broccoli florets and sauté 4-5 minutes, partially covered with lid, stirring or tossing several times until broccoli is bright green and crisp-tender then remove from the pan. Tip: If you prefer softer broccoli, add 2 Tbsp water before covering with the lid and it will steam cook the broccoli.\n4. Increase heat to high heat and add 1 Tbsp oil. Add beef in a single layer and sauté 2 minutes per side or just until cooked through. Quickly pull out a piece to test for doneness.\n5. Add the sauce, reduce heat to medium/low and simmer 3-4 minutes. It will thicken. Add broccoli and stir to combine. Stir in 1-2 Tbsp water to thin the sauce if desired. Serve over white rice.\n\n[Recipe link](https://natashaskitchen.com/beef-and-broccoli)."
+    },
+    {
+      "type": "Main",
+      "mealtimes": [
+        "Lunch",
+        "Dinner"
+      ],
+      "exclude": false,
+      "title": "Stir Fry (Chicken)",
+      "description": "A stir-fry with chicken.",
+      "directions": "1. **To make the chicken stir-fry noodles:** In a large pot with boiling salted water, cook the spaghetti according to package directions. Add the broccoli florets the last 5 minutes of cooking (2-3 minutes for snap peas or green beans) and let them cook with pasta until tender. Drain the noodles and broccoli and set aside.\n2. While pasta is cooking, whisk together the brown sugar, soy sauce, hoisin sauce, sesame oil, ginger, red pepper, and black pepper in a small bowl.\n3. Season chicken strips to taste with salt and pepper. Add olive oil to a medium-sized skillet and cook chicken in an even layer over medium heat, turning from time to time for 2 or 3 minutes, until slightly golden. Stir in the garlic, and carrots and cook for a minute more, until cooked through but not overdone.\n4. Transfer the cooked spaghetti and broccoli to the skillet and pour the sauce on top and toss until fully incorporated. Reheat for a couple of minutes and serve the chicken stir-fry noodles, garnished with scallion and toasted sesame seeds.\n5. Enjoy!",
+      "ingredients": [
+        {
+          "count": 0,
+          "ingredient": "Spaghetti noodles"
+        },
+        {
+          "count": 0,
+          "ingredient": "Chicken strips"
+        },
+        {
+          "count": 0,
+          "ingredient": "Broccoli"
+        },
+        {
+          "count": 0,
+          "ingredient": "Brown sugar"
+        },
+        {
+          "count": 0,
+          "ingredient": "Hoisin sauce"
+        },
+        {
+          "count": 0,
+          "ingredient": "Sesame oil"
+        },
+        {
+          "count": 0,
+          "ingredient": "Ginger"
+        },
+        {
+          "count": 0,
+          "ingredient": "Red peppers"
+        },
+        {
+          "count": 0,
+          "ingredient": "Black pepper"
+        },
+        {
+          "count": 0,
+          "ingredient": "Olive oil"
+        },
+        {
+          "count": 0,
+          "ingredient": "Garlic"
+        },
+        {
+          "count": 0,
+          "ingredient": "Carrots"
+        }
+      ]
+    },
+    {
+      "type": "Main",
+      "mealtimes": [
+        "Lunch",
         "Breakfast"
       ],
       "title": "Eating Out",
