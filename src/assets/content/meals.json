@@ -514,6 +514,34 @@
     {
       "type": "Main",
       "mealtimes": [
+        "Dinner"
+      ],
+      "exclude": false,
+      "title": "Steak",
+      "description": "Only the tastiest of meals.",
+      "ingredients": [
+        {
+          "count": 1,
+          "ingredient": "Steak"
+        },
+        {
+          "count": 0,
+          "ingredient": "Steak spice"
+        },
+        {
+          "count": 0,
+          "ingredient": "Salt"
+        },
+        {
+          "count": 0,
+          "ingredient": "Pepper"
+        }
+      ],
+      "directions": "1. Preheat grill to ~375°.\n2. While the grill is heating rub both sides of the steak with about 1/2 a tbsp. of salt and crushed black pepper each, and let sit for ~10-15 minutes.\n3. Cook leave over direct heat for ~5 minutes per side (until it feels like the fleshy part under your thumb).\n4. Take the steak off the grill, let sit under tinfoil for 5-10 minutes.\n5. Plate with steak spice."
+    },
+    {
+      "type": "Main",
+      "mealtimes": [
         "Lunch",
         "Breakfast"
       ],
