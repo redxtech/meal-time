@@ -540,6 +540,34 @@
       "directions": "1. Preheat grill to ~375°.\n2. While the grill is heating rub both sides of the steak with about 1/2 a tbsp. of salt and crushed black pepper each, and let sit for ~10-15 minutes.\n3. Cook leave over direct heat for ~5 minutes per side (until it feels like the fleshy part under your thumb).\n4. Take the steak off the grill, let sit under tinfoil for 5-10 minutes.\n5. Plate with steak spice."
     },
     {
+      "type": "Side",
+      "mealtimes": [
+        "Dinner"
+      ],
+      "exclude": false,
+      "title": "Prosciutto Wrapped Asparagus",
+      "description": "Yum!",
+      "ingredients": [
+        {
+          "count": 1,
+          "ingredient": "Asparagus"
+        },
+        {
+          "count": 1,
+          "ingredient": "Prosciutto"
+        },
+        {
+          "count": 0,
+          "ingredient": "Lemon juice"
+        },
+        {
+          "count": 0,
+          "ingredient": "Olive oil"
+        }
+      ],
+      "directions": "1. Break the ends off the asparagus and wash them.\n2. Wrap the asparagus with the prosciutto (half a slice per asparagus).\n3. Place the wrapped asparagus on a baking tray, and drizzle with olive oil and lemon juice.\n4. Cook at 400°-425° for 6-7 minutes.\n5. Eat!"
+    },
+    {
       "type": "Main",
       "mealtimes": [
         "Lunch",
