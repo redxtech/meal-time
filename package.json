@@ -30,6 +30,6 @@
 		"postcss-nested": "^4.2.3",
 		"prettier": "^2.1.1",
 		"tailwindcss": "^1.8.6",
-		"vite": "^1.0.0-rc.1"
+		"vite": "^2.9.13"
 	}
 }
